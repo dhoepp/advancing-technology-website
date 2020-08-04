@@ -1,0 +1,235 @@
+/* BASE STYLES*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 25px 0;
+}
+
+header {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+
+/* DEFAULTS */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    overflow: auto;
+}
+
+.wrap {
+    max-width: 1280px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+#benefits {
+    background-color: #bdd5ea;
+}
+
+#header {
+    background-image: url("/images/conference-hero.jpg");
+    color: #e9e9e9;
+    text-align: center;
+    ;
+}
+
+#header-image{
+    width: 100px;
+    border-radius: 50%;
+    border: solid 5px white;
+    padding: 5px;
+}
+
+.three-part-section {
+    min-height: 400px;
+    background-image: url(/images/swirl.png);
+}
+
+.three-part-section img {
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.three-part-image {
+    width: 40%;
+    float: left;
+}
+
+.three-part-text {
+    width: 60%;
+    float: left;
+}
+
+
+#table {
+    background-color: #bdd5ea;
+}
+
+tr#title {
+    height: 100px;
+    font-size: 24px;
+}
+
+tr#header-row {
+    background-color: #495867;
+    color: white;
+    height: 50px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+tr.body-rows {
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+tr.body-rows.desc {
+    height: 100px;
+}
+
+.buy-now {
+    background-color: #fe5f55;
+    padding: 5px 15px;
+    border-radius: 10%;
+    color: white;
+}
+
+.buy-now a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#speakers {
+    text-align: center;
+}
+
+#day1 {
+    max-width: 49%;
+    float: left;
+    background-image: url(/images/swirl.png);
+    border: 1px solid #e9e9e9;
+}
+
+#day1 img {
+    border-radius: 50%;
+    width: 125px;
+}
+
+#day1 img:hover {
+    border: 5px solid #577399;
+    width: 115px;
+}
+
+#day2 {
+    max-width: 49%;
+    float: right;
+    background-image: url(/images/swirl.png);
+    border: 1px solid #e9e9e9;
+}
+
+#day2 img {
+    border-radius: 50%;
+    width: 125px;
+}
+
+#day2 img:hover {
+    border: 5px solid #577399;
+    width: 115px;
+}
+
+p.name {
+    font-weight: 700;
+}
+
+#footer {
+    background-color: #bdd5ea;
+    text-align: center;
+}
+
+#tickets {
+    text-align: center;
+}
+
+#order-form {
+    background-image: url(/images/swirl.png);
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+
+form input.text {
+    width: 51%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.select {
+    position: relative;
+}
+
+.select select {
+    appearance: none;
+}
+
+.select select {
+    width: 50%;
+    height: 50px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: white;
+    appearance: none;
+    border: 1px solid #e9e9e9;
+    padding: 10px;
+    -webkit-appearance: none;
+}
+  
+.select:hover,
+.select:focus {
+  background-color: white;
+  border-bottom-color: #e9e9e9;
+}
+
+#button {
+    background-color: #fe5f55;
+    padding: 5px 15px;
+    border-radius: 10%;  
+    color: white;
+    font-weight: bold;  
+    border: none;    
+}
+
+
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: #abd;
+}
+
+
+
+#copyright {
+    text-align: center;
+    padding: 25px;
+    color: white;
+    background-color: #495867;
+}

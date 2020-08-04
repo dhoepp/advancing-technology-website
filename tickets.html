@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet"> 
+    <title>Tickets</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+        </ul>
+    </nav>
+    <section id="header">
+        <div class="wrap">
+            <header>
+                <img id="header-image" style="margin: 0 auto;" src="images/hero-symbol.jpg">
+                <h1>ADVANCING TECHNOLOGY</h1>
+                <h2>1st Annual Budding Developers Conference</h2>
+                <p>Orlando, FL - October 11, 2019</p>
+            </header>
+        </div>
+    </section>
+
+    
+    
+    <section id="tickets">
+        <h1>Get your tickets!</h1>
+
+        <form id="order-form" method="get" action="">
+            <label><h3>Your Info</h3></label>
+            <input class="text" type="text" placeholder="NAME" name="name" required>
+            <input class="text" type="email" placeholder="EMAIL" name="email" required>
+            <br>
+            <br>
+            
+            <label><h3>Package</h3></label>
+
+            <div class="select">
+                <select name="package">
+                    <option value="1">Standard - $149</option>
+                    <option value="2">Premium - $249</option>
+                </select>
+            </div>
+            <br>
+
+            <input class="cbox" type="checkbox" value="3" name="lodging">
+            <label>Add on lodging - $99</label>
+            <br>
+            <input class="cbox" type="checkbox" value="4" name="meals">
+            <label>Add on meals - $119</label>
+            <br>
+            <br>
+            <button id="button"><span>Submit</span></button>
+            <br>
+        </form>
+    </section>
+    <section id="copyright">
+        &copy; 2020
+    </section>
+</body>
+</html>
