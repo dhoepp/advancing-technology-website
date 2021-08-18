@@ -19,6 +19,16 @@ img {
     max-width: 100%;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
 section {
     overflow: auto;
 }
@@ -29,8 +39,15 @@ section {
     margin: 0 auto;
 }
 
-#benefits {
+section#benefits {
     background-color: #bdd5ea;
+}
+
+section#benefits ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
 }
 
 #header {
@@ -232,4 +249,213 @@ input[type='checkbox']:checked {
     padding: 25px;
     color: white;
     background-color: #495867;
+}
+
+/**** media queries ****/
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 1.25em;
+    }
+    section#speakers img{
+        width: 100px;
+    }
+
+    .grid-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section#header .wrap {
+        padding: 100px 0;
+    }
+    h1 {
+        font-size: 1.75em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: 1.5em;
+    }
+    section#benefits h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    section#benefits ul {
+        display: block;
+        text-align: center;
+        padding-inline-start: 0px;
+        font-size: 1.5em;
+    }
+    li {
+        padding: 10px;
+    }
+    li strong {
+        font-size: 1.75em;
+    }
+    section#three-part div.wrap{
+        padding: 0;
+    }
+    .three-part-section {
+        padding: 20px;
+    }
+    .three-part-text {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .three-part-section img{
+            display: none;
+    }
+    section#table table td,th{
+        font-size: 1.5em;
+        padding: 30px;
+    }
+    section#speakers img{
+        display: none;
+    }
+    section#day1 {
+        max-width: 100%;
+        padding: 0;
+        border: none;
+        font-size: 1.5em;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    section#day2 {
+        max-width: 100%;
+        padding: 0;
+        border: none;
+        font-size: 1.5em;
+        text-align: left;
+    }
+    section#footer {
+        font-size: 1.5em;
+        padding: 0;
+    }
+    section#tickets form{
+        width: 100%;
+        padding: 0;
+    }
+
+    .grid-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 1.1em;
+    }
+    section#table .wrap {
+        padding: 10px;
+    }
+    section#table {
+        font-size: .75em;
+    }
+
+    .grid-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #cccccc;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+.grid {
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    width: 100%;
+    padding-top: 40px;
+}
+
+#rating-results {
+    width: 100%;
+    font-size: 2rem;
+    height: 60px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    height: 60px;
+    background-color: #FF5733;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 1.5rem;
+    color: #fff;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+
+}
+
+button:hover {
+    background-color: #FF7744;
+  }
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+button#submit-button {
+    margin: 0 45%;
 }

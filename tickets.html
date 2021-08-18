@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet"> 
     <title>Tickets</title>
+    
 </head>
 <body>
     <nav>
@@ -21,7 +22,8 @@
                 <img id="header-image" style="margin: 0 auto;" src="images/hero-symbol.jpg">
                 <h1>ADVANCING TECHNOLOGY</h1>
                 <h2>1st Annual Budding Developers Conference</h2>
-                <p>Orlando, FL - October 11, 2019</p>
+                <p>Orlando, FL - October 11, 2021</p>
+                <h3 id='countdown'>Javascript countdown goes here!</h3>
             </header>
         </div>
     </section>
@@ -29,7 +31,8 @@
     
     
     <section id="tickets">
-        <h1>Get your tickets!</h1>
+        <h1><span>Get y</span><span id='easter-egg'>o</span><span>ur tickets!</span></h1>
+        
 
         <form id="order-form" method="get" action="">
             <label><h3>Your Info</h3></label>
@@ -62,5 +65,17 @@
     <section id="copyright">
         &copy; 2020
     </section>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Enter your code:</p>
+            <input id='code' type="text">
+    </div>
+  
+  </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
